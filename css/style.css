@@ -14,6 +14,25 @@
   transition: all .2s linear;
 }
 
+h1 {
+  font-size: 1.5rem;
+
+}
+
+h2,
+h3 {
+  font-size: 1.1rem;
+}
+
+h4,
+h5 {
+  font-size: .8rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 html {
   overflow-x: hidden;
   font-size: 62.5%;
@@ -678,7 +697,7 @@ section {
   margin-bottom: 1rem;
 }
 
-.star-container {
+.col-2 .star-container {
   color: gold;
   font-size: 1.4rem;
   margin-top: .5rem;
@@ -698,36 +717,77 @@ section {
 }
 
 .col-2 a {
-  padding: .1rem 1rem;
+  padding: 1rem;
   font-size: 1rem;
   background: #0984e3;
   color: #fff;
-  margin: 1rem .1rem;
+  margin: 1rem 0;
   border-radius: 5px;
   text-align: center;
 }
 
+.col-2 form {
+  display: flex;
+  margin: 1rem .5rem;
+}
+
+.col-2 form span {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.col-2 form input {
+  font-size: 2rem;
+}
+
 .col-2 h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 1rem 0;
+  font-size: 1.9rem;
+  font-weight: 900;
+  margin: 2rem 0;
   text-align: left;
 }
 
 
 .col-2 p {
   color: #333;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   text-align: left;
 }
 
-.small-container .row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  place-items: center;
-  max-width: 897px;
+@media screen and (min-width: 992px) {
+  .small-container .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    place-items: center;
+    /* max-width: 897px; */
+  }
 }
+
+@media screen and(max-width: 786px) {
+  .small-container .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    place-items: center;
+  }
+}
+
+
+/* .small-container .row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  padding: 8rem 12rem;
+  place-items: center;
+  max-width: 777px;
+  align-items: center;
+  justify-content: center;
+  margin: 6rem auto;
+
+} */
+
+
 
 .products .box-container .box .content h3 {
   font-size: 2rem;
